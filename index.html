@@ -7,41 +7,92 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div class="terminal">
-        <header class="terminal-header">
-            <div class="terminal-dots">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-            </div>
-            <span class="terminal-title">codetonight@guild ~ $</span>
-        </header>
+    <!-- SKIP LINK (accessibility: HOLD) -->
+    <a href="#main" class="skip-link">Skip to content</a>
 
-        <main class="terminal-body">
-            <div class="profile-section">
-                <div class="avatar-container">
-                    <div class="avatar-placeholder">V>></div>
-                </div>
-                <div class="profile-info">
-                    <h1 class="guild-name">CodeTonight</h1>
-                    <p class="tagline">We make technology work for people. GRIP is our proof.</p>
-                    <div class="badges">
-                        <span class="badge founding">Founding Member</span>
-                        <span class="badge ritual">Ritual #9 Author</span>
-                        <span class="badge ritual">Ritual #10 Author</span>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+        <nav class="header-nav">
+            <span class="nav-brand">CODETONIGHT</span>
+            <div class="nav-links">
+                <a href="#team">TEAM</a>
+                <a href="#grip">GRIP</a>
+                <a href="#links">GUILD</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO: Asymmetric 3+9 (Pattern 1) -->
+    <main id="main" role="main">
+        <section class="hero">
+            <div class="hero-grid">
+                <!-- Sidebar: 3 columns -->
+                <aside class="hero-sidebar">
+                    <div class="meta-block">
+                        <span class="meta-label">CONTEXT</span>
+                        <span class="meta-value">AI Craftspeople<br>Guild Member</span>
+                    </div>
+                    <div class="meta-block">
+                        <span class="meta-label">EST</span>
+                        <span class="meta-value">2026</span>
+                    </div>
+                    <div class="meta-block">
+                        <span class="meta-label">ORIGIN</span>
+                        <span class="meta-value">Cape Town, ZA</span>
+                    </div>
+                    <div class="meta-block">
+                        <span class="meta-label">STATUS</span>
+                        <span class="meta-value status-live"><span class="pulse-dot"></span> Live</span>
+                    </div>
+                </aside>
+
+                <!-- Main: 9 columns -->
+                <div class="hero-main">
+                    <p class="hero-preface">// Guild Member Profile</p>
+                    <h1 class="hero-heading">
+                        WE MAKE<br>
+                        TECHNOLOGY<br>
+                        <span class="hero-muted">WORK.</span>
+                    </h1>
+                    <div class="hero-body">
+                        <p>
+                            A small South African tech firm that builds tools for
+                            human-AI collaboration. GRIP is our proof. The failure
+                            modes are documented.
+                        </p>
+                    </div>
+                    <div class="hero-ctas">
+                        <a href="https://github.com/CodeTonight-SA/guild" class="btn-primary">VIEW REPO</a>
+                        <a href="#grip" class="btn-secondary">ABOUT GRIP</a>
+                    </div>
+                    <div class="trust-strip">
+                        <span>Founding Member</span>
+                        <span class="pipe">|</span>
+                        <span>Ritual #9 Author</span>
+                        <span class="pipe">|</span>
+                        <span>Ritual #10 Author</span>
+                        <span class="pipe">|</span>
+                        <span>474 Cycles</span>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <section class="section">
-                <h2 class="prompt">$ cat team.md</h2>
-                <div class="output">
+        <!-- TEAM: 8+4 asymmetric (Pattern 2 variant) -->
+        <section id="team" class="section section-border">
+            <div class="section-grid-8-4">
+                <div class="section-main">
+                    <h2 class="section-heading">THE <span class="heading-muted">TEAM.</span></h2>
+                    <div class="section-body">
+                        <p>Seven signatures. Three you can find on GitHub. Four that prefer to stay cryptic.</p>
+                    </div>
+
                     <table class="team-table">
                         <thead>
                             <tr>
-                                <th>Sig</th>
-                                <th>Who</th>
-                                <th>Role</th>
+                                <th>SIG</th>
+                                <th>WHO</th>
+                                <th>ROLE</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -51,101 +102,173 @@
                                 <td>GRIP Creator. Builds it, breaks it, documents both.</td>
                             </tr>
                             <tr>
-                                <td class="sig">--</td>
+                                <td class="sig">&mdash;</td>
                                 <td><a href="https://github.com/teslasolar">Thomas Frumkin</a></td>
                                 <td>Protocol Architect. ACGCLI, Guild Chain, ACG-NET.</td>
                             </tr>
                             <tr>
-                                <td class="sig">--</td>
+                                <td class="sig">&mdash;</td>
                                 <td><a href="https://github.com/michaeltoop">Michael</a></td>
                                 <td>GRIP contributor. Pair-programming pioneer.</td>
                             </tr>
-                            <tr class="cryptic">
+                            <tr class="row-cryptic">
                                 <td class="sig">A>></td>
-                                <td colspan="2"><em>Systems thinker. Explains before he builds.</em></td>
+                                <td colspan="2">Systems thinker. Explains before he builds.</td>
                             </tr>
-                            <tr class="cryptic">
+                            <tr class="row-cryptic">
                                 <td class="sig">K>></td>
-                                <td colspan="2"><em>Code minimalist. Says more with less.</em></td>
+                                <td colspan="2">Code minimalist. Says more with less.</td>
                             </tr>
-                            <tr class="cryptic">
+                            <tr class="row-cryptic">
                                 <td class="sig">M>></td>
-                                <td colspan="2"><em>Sees patterns others miss. Strategic lens.</em></td>
+                                <td colspan="2">Sees patterns others miss. Strategic lens.</td>
                             </tr>
-                            <tr class="cryptic">
+                            <tr class="row-cryptic">
                                 <td class="sig">F>></td>
-                                <td colspan="2"><em>Bridges worlds. Code and people.</em></td>
+                                <td colspan="2">Bridges worlds. Code and people.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </section>
 
-            <section class="section">
-                <h2 class="prompt">$ grip --status</h2>
-                <div class="output">
-                    <div class="stats-grid">
-                        <div class="stat">
-                            <span class="stat-value">280</span>
-                            <span class="stat-label">Automation Recipes</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">29</span>
-                            <span class="stat-label">Specialised Workers</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">474</span>
-                            <span class="stat-label">Development Cycles</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">10</span>
-                            <span class="stat-label">Safety Gates</span>
-                        </div>
+                <!-- Black panel: Philosophy -->
+                <div class="black-panel">
+                    <span class="panel-label">POSITION</span>
+                    <div class="panel-item">
+                        <span class="panel-num">01</span>
+                        <span>AI should be built with craft, not shipped as slop.</span>
                     </div>
-                    <p class="description">
-                        GRIP gives Claude Code persistent memory, mechanical quality checks
-                        it can't argue its way around, and the ability to learn from its own
-                        mistakes. Safety rules are enforced by code &mdash; not by asking the
-                        AI nicely.
-                    </p>
+                    <div class="panel-item">
+                        <span class="panel-num">02</span>
+                        <span>Safety rules enforced by code. Not by asking nicely.</span>
+                    </div>
+                    <div class="panel-item">
+                        <span class="panel-num">03</span>
+                        <span>If a claim can't survive adversarial review, it doesn't ship.</span>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section">
-                <h2 class="prompt">$ cat guild-links.md</h2>
-                <div class="output links">
-                    <a href="https://aicraftspeopleguild.github.io/">AI Craftspeople Guild</a>
-                    <a href="https://aicraftspeopleguild.github.io/ai-rituals.html">The 10 Rituals</a>
-                    <a href="https://github.com/teslasolar/ACGCLI">Thomas's ACGCLI</a>
-                    <a href="https://github.com/Mysticbirdie/Guild">Kelly's Flywheel</a>
-                    <a href="https://github.com/CodeTonight-SA/guild">This Repo</a>
+        <!-- GRIP: Stats + Terminal (Pattern 5.4) -->
+        <section id="grip" class="section section-border">
+            <h2 class="section-heading">GRIP<span class="heading-muted">.</span></h2>
+            <div class="section-body">
+                <p>A system that gives Claude Code persistent memory, mechanical quality
+                checks it can't argue its way around, and the ability to learn from
+                its own mistakes.</p>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat">
+                    <span class="stat-num">280</span>
+                    <span class="stat-label">AUTOMATION RECIPES</span>
                 </div>
-            </section>
-
-            <section class="section">
-                <h2 class="prompt">$ echo $PHILOSOPHY</h2>
-                <div class="output quote">
-                    "We are craftspeople who chose to build with purpose and integrity."
+                <div class="stat">
+                    <span class="stat-num">29</span>
+                    <span class="stat-label">SPECIALISED WORKERS</span>
                 </div>
-            </section>
-        </main>
+                <div class="stat">
+                    <span class="stat-num">474</span>
+                    <span class="stat-label">DEVELOPMENT CYCLES</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">10</span>
+                    <span class="stat-label">SAFETY GATES</span>
+                </div>
+            </div>
 
-        <footer class="terminal-footer">
-            <span class="cursor">ACG-DISCOVER-v1</span>
-            <span class="protocol">
-                <a href="https://github.com/teslasolar/ACG_Repo_Template">Protocol by Thomas Frumkin</a>
+            <!-- Terminal Window (Pattern 5.4) -->
+            <div class="terminal">
+                <div class="terminal-chrome">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="terminal-title">~/grip --status</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="t-prompt">$</span> <span class="t-cmd">cat rituals.md</span></p>
+                    <p class="t-output">Ritual <span class="t-orange">9</span>: Falsify Before You Ship</p>
+                    <p class="t-dim">  Every claim gets adversarial review. 4 of 6 eliminated. None survived unchanged.</p>
+                    <p class="t-output">Ritual <span class="t-orange">10</span>: Cost-Aware Retrieval</p>
+                    <p class="t-dim">  Check what you know before burning tokens. 440x savings measured.</p>
+                    <br>
+                    <p><span class="t-prompt">$</span> <span class="t-cmd">cat honest-assessment.txt</span></p>
+                    <p class="t-dim">  Some recipes are untested. Rough edges exist.</p>
+                    <p class="t-dim">  We wouldn't pass our own Ritual 8 yet.</p>
+                    <p class="t-dim">  The system improves by finding what's broken.</p>
+                    <p class="t-cursor">_</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GUILD LINKS -->
+        <section id="links" class="section">
+            <h2 class="section-heading">GUILD <span class="heading-muted">LINKS.</span></h2>
+            <div class="links-grid">
+                <a href="https://aicraftspeopleguild.github.io/" class="link-card">
+                    <span class="link-label">HUB</span>
+                    <span class="link-title">AI Craftspeople Guild</span>
+                    <span class="link-arrow">&rarr;</span>
+                </a>
+                <a href="https://aicraftspeopleguild.github.io/ai-rituals.html" class="link-card">
+                    <span class="link-label">RITUALS</span>
+                    <span class="link-title">The 10 Practices</span>
+                    <span class="link-arrow">&rarr;</span>
+                </a>
+                <a href="https://github.com/teslasolar/ACGCLI" class="link-card">
+                    <span class="link-label">TOOL</span>
+                    <span class="link-title">Thomas's ACGCLI</span>
+                    <span class="link-arrow">&rarr;</span>
+                </a>
+                <a href="https://github.com/Mysticbirdie/Guild" class="link-card">
+                    <span class="link-label">FLYWHEEL</span>
+                    <span class="link-title">Kelly's Framework</span>
+                    <span class="link-arrow">&rarr;</span>
+                </a>
+                <a href="achievements.html" class="link-card">
+                    <span class="link-label">TRACK</span>
+                    <span class="link-title">Achievements</span>
+                    <span class="link-arrow">&rarr;</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <span class="footer-protocol">ACG-DISCOVER-v1</span>
+            <span class="footer-credit">
+                Protocol by <a href="https://github.com/teslasolar/ACG_Repo_Template">Thomas Frumkin</a>
             </span>
-        </footer>
-    </div>
+        </div>
+        <div class="footer-quote">
+            "We are craftspeople who chose to build with purpose and integrity."
+        </div>
+    </footer>
 
     <script>
-        // Load manifest.json and update stats dynamically
+        // Minimal: load manifest for dynamic data
         fetch('manifest.json')
             .then(r => r.json())
             .then(data => {
-                document.querySelector('.tagline').textContent = data.member.tagline;
+                document.querySelector('.hero-preface').textContent =
+                    '// ' + data.member.tagline;
             })
-            .catch(() => { /* Static fallback is fine */ });
+            .catch(() => {});
+
+        // Intersection Observer for fade-in sections
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach(s => observer.observe(s));
     </script>
 </body>
 </html>
