@@ -1,0 +1,25 @@
+{
+  "achievements": [
+    {
+      "id": "founding-member",
+      "name": "Founding Member",
+      "description": "One of the original members who shaped the Guild's foundation",
+      "unlocked": true,
+      "date": "2026-03-07"
+    },
+    {
+      "id": "ritual-author-9",
+      "name": "Ritual Author: Falsify Before You Ship",
+      "description": "Authored Guild Ritual #9 -- adversarial review before publication",
+      "unlocked": true,
+      "date": "2026-03-15"
+    },
+    {
+      "id": "ritual-author-10",
+      "name": "Ritual Author: Cost-Aware Retrieval",
+      "description": "Authored Guild Ritual #10 -- exhaust cheap knowledge before expensive searches",
+      "unlocked": true,
+      "date": "2026-03-15"
+    }
+  ]
+}
