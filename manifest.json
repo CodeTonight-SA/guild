@@ -1,0 +1,72 @@
+{
+  "handle": "CodeTonight",
+  "member": {
+    "github": "CodeTonight-SA",
+    "joined": "2026-03-07",
+    "tagline": "We make technology work for people. GRIP is our proof.",
+    "avatar_url": "assets/avatar.png",
+    "site_url": "https://codetonight-sa.github.io/guild/"
+  },
+  "acg_protocol": "ACG-DISCOVER-v1",
+  "updated": "2026-03-30T12:00:00Z",
+
+  "stats": {
+    "sessions_attended": 6,
+    "contributions": 12,
+    "publications": 3,
+    "vettings_passed": 1,
+    "refusals_filed": 0,
+    "audits_served": 0
+  },
+
+  "content": {
+    "posts": [],
+    "projects": [
+      {
+        "title": "GRIP",
+        "url": "content/projects/grip.md",
+        "description": "A system that gives Claude Code persistent memory, quality checks, and self-improvement"
+      }
+    ],
+    "resources": []
+  },
+
+  "achievements": [
+    "ritual-author-9",
+    "ritual-author-10",
+    "founding-member"
+  ],
+
+  "team": {
+    "V>>": {
+      "name": "Laurie Scheepers",
+      "github": "lauriescheepersot",
+      "role": "GRIP Creator, Technical Director",
+      "ritual_author": [9, 10]
+    },
+    "Thomas": {
+      "name": "Thomas Frumkin",
+      "github": "teslasolar",
+      "role": "Protocol Architect, Konomi Systems",
+      "ritual_author": [],
+      "guild_role": "Founder, ACG-NET, Guild Chain, ACGCLI"
+    },
+    "Toopie": {
+      "name": "Michael",
+      "github": "michaeltoop",
+      "role": "GRIP Contributor, Pair-Mode Pioneer"
+    },
+    "A>>": {
+      "hint": "Systems thinker. Explains before he builds."
+    },
+    "K>>": {
+      "hint": "Code minimalist. Says more with less."
+    },
+    "M>>": {
+      "hint": "Sees patterns others miss. Strategic lens."
+    },
+    "F>>": {
+      "hint": "Bridges worlds. Code and people."
+    }
+  }
+}
